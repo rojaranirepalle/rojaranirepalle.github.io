@@ -1,0 +1,514 @@
+/* ===================================================
+   AI PORTFOLIO
+   animations.css
+=================================================== */
+
+
+/* ===============================
+   FADE IN
+================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===============================
+   FADE LEFT
+================================== */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ===============================
+   FADE RIGHT
+================================== */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    animation:fadeRight .8s ease forwards;
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ===============================
+   ZOOM
+================================== */
+
+.zoom{
+
+    animation:zoom .8s ease;
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ===============================
+   FLOATING
+================================== */
+
+.float{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===============================
+   GLOW
+================================== */
+
+.glow{
+
+    transition:.35s;
+
+}
+
+.glow:hover{
+
+    box-shadow:
+
+    0 0 20px rgba(37,99,235,.25),
+
+    0 0 40px rgba(37,99,235,.15);
+
+}
+
+
+/* ===============================
+   PROJECT CARD
+================================== */
+
+.project-card{
+
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:
+
+        translateY(-12px)
+
+        scale(1.02);
+
+}
+
+
+/* ===============================
+   BUTTON
+================================== */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ===============================
+   IMAGE ZOOM
+================================== */
+
+.project-image{
+
+    overflow:hidden;
+
+}
+
+.project-image img{
+
+    transition:1s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ===============================
+   SKILL CARD
+================================== */
+
+.skill-card{
+
+    transition:.4s;
+
+}
+
+.skill-card:hover{
+
+    transform:
+
+    translateY(-10px)
+
+    rotate(.3deg);
+
+}
+
+
+/* ===============================
+   HERO BACKGROUND
+================================== */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    background:
+
+    radial-gradient(
+
+        rgba(37,99,235,.15),
+
+        transparent
+
+    );
+
+    top:-250px;
+
+    right:-150px;
+
+    animation:rotateGlow 18s linear infinite;
+
+}
+
+@keyframes rotateGlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ===============================
+   SECTION TITLE
+================================== */
+
+.section-title h2{
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+.section-title h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:60%;
+
+    height:4px;
+
+    left:20%;
+
+    bottom:-10px;
+
+    background:linear-gradient(
+
+    90deg,
+
+    #2563eb,
+
+    #7c3aed
+
+    );
+
+    border-radius:50px;
+
+}
+
+
+/* ===============================
+   TIMELINE
+================================== */
+
+.timeline-content{
+
+    transition:.35s;
+
+}
+
+.timeline-content:hover{
+
+    transform:
+
+    translateY(-8px);
+
+}
+
+
+/* ===============================
+   CONTACT CARD
+================================== */
+
+.contact-card{
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:
+
+    translateY(-10px);
+
+}
+
+
+/* ===============================
+   SOCIAL ICON
+================================== */
+
+.social a{
+
+    transition:.3s;
+
+}
+
+.social a:hover{
+
+    transform:
+
+    scale(1.2);
+
+}
+
+
+/* ===============================
+   SCROLL
+================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ===============================
+   GLASS EFFECT
+================================== */
+
+.glass{
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(255,255,255,.65);
+
+    border:1px solid rgba(255,255,255,.3);
+
+}
+
+
+/* ===============================
+   SHIMMER
+================================== */
+
+.shimmer{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shimmer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+}
+
+.shimmer:hover::before{
+
+    animation:shimmer 1.2s;
+
+}
+
+@keyframes shimmer{
+
+    100%{
+
+        left:120%;
+
+    }
+
+}
