@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roja Rani Repalle — Portfolio</title>
 <meta name="description" content="Roja Rani Repalle: 12+ years in e-commerce and technology, now building with AI, Machine Learning, and Agentic AI.">
+<meta name="theme-color" content="#0b2545">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Roja Rani Repalle — Portfolio">
+<meta property="og:description" content="12+ years in e-commerce and technology, now building with AI, Machine Learning, and Agentic AI.">
+<meta property="og:url" content="https://rojaranirepalle.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Roja Rani Repalle — Portfolio">
+<meta name="twitter:description" content="12+ years in e-commerce and technology, now building with AI, Machine Learning, and Agentic AI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b2545'/%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23b8902f' stroke-width='2.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-weight='600' font-size='24' fill='%23d9b65a' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,8 +26,9 @@
     --paper-alt:#eef2f6;
     --ink:#1b2733;
     --ink-soft:#55636f;
-    --ink-faint:#8996a3;
+    --ink-faint:#616d79;
     --gold:#b8902f;
+    --gold-deep:#7a5c1a;
     --gold-light:#d9b65a;
     --line:rgba(11,37,69,0.12);
     --white:#ffffff;
@@ -52,7 +62,7 @@
     letter-spacing:0.1em;
     text-transform:uppercase;
     font-weight:600;
-    color:var(--gold);
+    color:var(--gold-deep);
   }
 
   /* ---------- nav ---------- */
@@ -102,7 +112,7 @@
     color:var(--white);
     padding:100px 0 88px;
   }
-  .hero .eyebrow{margin-bottom:18px;}
+  .hero .eyebrow{margin-bottom:18px; color:var(--gold);}
   .hero h1{
     font-size:clamp(38px,6vw,58px);
     line-height:1.08;
@@ -223,7 +233,7 @@
     .cert-item{grid-template-columns:1fr; gap:8px;}
   }
   .cert-item:first-child{padding-top:0;}
-  .cert-date{font-size:12.5px; font-weight:600; color:var(--gold); letter-spacing:0.02em; padding-top:3px;}
+  .cert-date{font-size:12.5px; font-weight:600; color:var(--gold-deep); letter-spacing:0.02em; padding-top:3px;}
   .cert-main h3{font-size:17px; font-weight:600; margin-bottom:5px;}
   .cert-main .issuer{font-size:13.5px; color:var(--ink-soft);}
   .cert-main .subcourses{margin-top:10px; font-size:12.5px; color:var(--ink-soft);}
@@ -258,9 +268,21 @@
   .contact-row .btn{margin:0 7px 10px;}
 
   footer{padding:26px 0; text-align:center; font-size:12.5px; color:var(--ink-faint); background:var(--paper);}
+
+  /* ---------- skip link ---------- */
+  .skip-link{
+    position:absolute; left:16px; top:-60px;
+    background:var(--white); color:var(--navy);
+    padding:12px 20px; border-radius:4px; font-weight:600; font-size:14px;
+    text-decoration:none; z-index:1100;
+    transition:top 0.2s;
+  }
+  .skip-link:focus{top:16px;}
 </style>
 </head>
 <body>
+
+<a class="skip-link" href="#top">Skip to content</a>
 
 <header>
   <div class="wrap navbar">
@@ -277,7 +299,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M0 1H16" stroke="currentColor"/><path d="M0 6H16" stroke="currentColor"/><path d="M0 11H16" stroke="currentColor"/></svg>
+      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 1H16" stroke="currentColor"/><path d="M0 6H16" stroke="currentColor"/><path d="M0 11H16" stroke="currentColor"/></svg>
     </button>
   </div>
 </header>
@@ -301,11 +323,11 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" aria-labelledby="about-heading">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">About</div>
-        <h2>Business grounding, new technical toolkit</h2>
+        <h2 id="about-heading">Business grounding, new technical toolkit</h2>
       </div>
       <div class="about-grid">
         <div class="about-body">
@@ -324,11 +346,11 @@
     </div>
   </section>
 
-  <section id="skills" class="alt">
+  <section id="skills" class="alt" aria-labelledby="skills-heading">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Skills</div>
-        <h2>Commerce foundation, AI in progress</h2>
+        <h2 id="skills-heading">Commerce foundation, AI in progress</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-group">
@@ -346,15 +368,17 @@
             <span class="pill">Python</span>
             <span class="pill">NumPy</span>
             <span class="pill">Pandas</span>
+            <span class="pill">SQL</span>
             <span class="pill">Machine Learning</span>
             <span class="pill">Deep Learning</span>
-            <span class="pill">Computer Vision (OpenCV)</span>
+            <span class="pill">Computer Vision (OpenCV, YOLOv8)</span>
             <span class="pill">OCR</span>
+            <span class="pill">NLP</span>
             <span class="pill">Generative AI</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">FastAPI</span>
             <span class="pill learning">Agentic AI</span>
-            <span class="pill learning">Streamlit</span>
             <span class="pill learning">Gradio</span>
-            <span class="pill learning">FastAPI</span>
             <span class="pill learning">Tkinter</span>
           </div>
         </div>
@@ -363,26 +387,40 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" aria-labelledby="projects-heading">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Projects</div>
-        <h2>What I've been building</h2>
+        <h2 id="projects-heading">What I've been building</h2>
       </div>
       <div class="project-grid">
 
         <div class="project-card">
           <span class="ptag">Computer Vision</span>
-          <h3>Detection &amp; Color Toolkit</h3>
-          <p>OpenCV pipelines for face, eye, and pedestrian detection using Haar Cascade classifiers, plus HSV-based color detection and live webcam tracking.</p>
-          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI" target="_blank" rel="noopener">View code →</a>
+          <h3>Computer Vision Toolkit</h3>
+          <p>OpenCV pipelines for face, eye, and pedestrian detection with Haar Cascade classifiers and HSV-based color detection, extended with YOLOv8 object detection, segmentation, and pose estimation, plus Mediapipe 3D object and face tracking.</p>
+          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/tree/main/DL" target="_blank" rel="noopener">View code →</a>
         </div>
 
         <div class="project-card">
           <span class="ptag">OCR Pipeline</span>
           <h3>Document &amp; Receipt Scanner</h3>
-          <p>Detects a document's edges in a tilted photo, corrects perspective, and extracts structured fields (vendor, date, total) using OpenCV and Tesseract — now with a Streamlit demo UI.</p>
-          <span class="status-badge">DEMO BUILT · REPO PENDING</span>
+          <p>Detects a document's edges in a tilted photo, corrects perspective, and extracts structured fields (vendor, date, total) using OpenCV and Tesseract.</p>
+          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/blob/main/DL/OCR/files/document_scanner.py" target="_blank" rel="noopener">View code →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="ptag">GenAI Safety</span>
+          <h3>LLM Guardrails API</h3>
+          <p>A FastAPI service in front of Gemini that screens prompts and responses through input and output guardrails before they reach the model or the user.</p>
+          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/tree/main/AI/LLM%20Gaurdrails%20Workshop" target="_blank" rel="noopener">View code →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="ptag">MLOps</span>
+          <h3>ML Training CI/CD Pipeline</h3>
+          <p>A GitHub Actions workflow that retrains Random Forest and Logistic Regression models on every push and posts the confusion matrix and feature-importance report as a CML comment.</p>
+          <a class="plink" href="https://github.com/rojaranirepalle/CICD-Deployment" target="_blank" rel="noopener">View code →</a>
         </div>
 
         <div class="project-card">
@@ -407,21 +445,21 @@
         </div>
 
         <div class="project-card">
-          <span class="ptag">Dashboard</span>
-          <h3>Log Monitor Dashboard</h3>
-          <p>A planned Streamlit extension for the log anomaly monitor — visualizing error rate and response time over time, with detected anomaly windows highlighted.</p>
-          <span class="status-badge">PLANNED</span>
+          <span class="ptag">Platform Engineering</span>
+          <h3>Enterprise Log Analysis Platform</h3>
+          <p>A modular Python service — parsers, models, and a Pandas analytics layer — for ingesting and categorizing operational logs. Phase 1 (parsing engine, error categorization) is built; REST APIs and ML-based anomaly detection are next.</p>
+          <span class="status-badge">PHASE 1 BUILT · REPO PRIVATE</span>
         </div>
 
       </div>
     </div>
   </section>
 
-  <section id="certifications" class="alt">
+  <section id="certifications" class="alt" aria-labelledby="certifications-heading">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Certifications</div>
-        <h2>Coursework completed in 2026</h2>
+        <h2 id="certifications-heading">Coursework completed in 2026</h2>
         <p>Verified where a public link is available.</p>
       </div>
       <div class="cert-list">
@@ -471,11 +509,11 @@
     </div>
   </section>
 
-  <section id="journey">
+  <section id="journey" aria-labelledby="journey-heading">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Journey</div>
-        <h2>How I got here</h2>
+        <h2 id="journey-heading">How I got here</h2>
       </div>
       <div class="timeline">
         <div class="tl-item">
@@ -508,14 +546,29 @@
           <h3>IIT Delhi certification</h3>
           <p>Completed the Professional Certificate Program in Generative AI, Machine Learning, and Intelligent Automation through IHFC, Technology Innovation Hub of IIT Delhi.</p>
         </div>
+        <div class="tl-item">
+          <div class="tl-date">Aug 12, 2026</div>
+          <h3>Shipped a CI/CD model pipeline</h3>
+          <p>Built a GitHub Actions workflow that retrains a model on every push and reports results automatically via CML.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Aug 20 – Sep 6, 2026</div>
+          <h3>Deep learning &amp; object detection</h3>
+          <p>Built ANN and CNN classifiers and a multiclass image classifier, then extended the computer-vision toolkit with YOLOv8 object detection, segmentation, and pose estimation, plus Mediapipe 3D tracking.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Sep 2026</div>
+          <h3>Building with Generative AI</h3>
+          <p>Integrated Gemini, GPT, and OpenAI APIs, practiced prompt engineering, and shipped a FastAPI service that guards LLM inputs and outputs.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section" aria-labelledby="contact-heading">
     <div class="wrap">
       <div class="eyebrow" style="color:var(--gold-light);">Contact</div>
-      <h2>Let's talk about AI, e-commerce, or where they meet.</h2>
+      <h2 id="contact-heading">Let's talk about AI, e-commerce, or where they meet.</h2>
       <p>Based in Hyderabad, India. Open to conversations and opportunities.</p>
       <div class="contact-row">
         <a class="btn btn-gold" href="https://github.com/rojaranirepalle" target="_blank" rel="noopener">GitHub</a>
