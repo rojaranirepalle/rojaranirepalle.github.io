@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roja Rani Repalle — Portfolio</title>
 <meta name="description" content="Roja Rani Repalle: 12+ years in e-commerce and technology, now building with AI, Machine Learning, and Agentic AI.">
-<meta name="theme-color" content="#0b2545">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0e11">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Roja Rani Repalle — Portfolio">
 <meta property="og:description" content="12+ years in e-commerce and technology, now building with AI, Machine Learning, and Agentic AI.">
@@ -13,573 +14,470 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Roja Rani Repalle — Portfolio">
 <meta name="twitter:description" content="12+ years in e-commerce and technology, now building with AI, Machine Learning, and Agentic AI.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b2545'/%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23b8902f' stroke-width='2.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-weight='600' font-size='24' fill='%23d9b65a' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b8f34a'/%3E%3Ctext x='32' y='43' font-family='monospace' font-weight='700' font-size='30' fill='%230b0e11' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0b2545;
-    --navy-2:#123b63;
-    --blue:#2e6da4;
-    --paper:#f7f9fb;
-    --paper-alt:#eef2f6;
-    --ink:#1b2733;
-    --ink-soft:#55636f;
-    --ink-faint:#616d79;
-    --gold:#b8902f;
-    --gold-deep:#7a5c1a;
-    --gold-light:#d9b65a;
-    --line:rgba(11,37,69,0.12);
-    --white:#ffffff;
+    color-scheme:dark;
+    --bg:#0b0e11;
+    --surface:#12171c;
+    --surface-2:#171d23;
+    --line:#232b33;
+    --line-strong:#2e3842;
+    --text:#eef2f5;
+    --muted:#9aa6b0;
+    --faint:#7d8993;
+    --lime:#b8f34a;
+    --cyan:#56d4e8;
+    --amber:#ffb454;
+    --heat-0:rgba(255,255,255,0.05);
+    --heat-1:#2b4a16;
+    --heat-2:#4f8a1c;
+    --heat-3:#86c331;
+    --heat-4:#b8f34a;
+    --sans:'Geist',system-ui,-apple-system,sans-serif;
+    --mono:'Geist Mono',ui-monospace,Menlo,monospace;
+    --r:14px;
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; scroll-padding-top:84px;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--lime); outline-offset:3px; border-radius:6px;}
+  h1,h2,h3{margin:0; font-weight:600; letter-spacing:-0.02em; line-height:1.1;}
+  p{margin:0;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  @media (max-width:700px){.wrap{padding:0 18px;}}
+  .mono{font-family:var(--mono);}
+  .hl{color:var(--lime);}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
     *{animation:none !important; transition:none !important;}
   }
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
-    font-size:16px;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,.display{
-    font-family:'Fraunces',serif;
-    font-weight:600;
-    letter-spacing:-0.01em;
-    margin:0;
-  }
-  a{color:inherit;}
-  .wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
-  @media (max-width:640px){.wrap{padding:0 20px;}}
-  .eyebrow{
-    font-size:12.5px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    font-weight:600;
-    color:var(--gold-deep);
-  }
 
-  /* ---------- nav ---------- */
-  header{
-    position:sticky; top:0; z-index:50;
-    background:rgba(11,37,69,0.96);
-    backdrop-filter:blur(8px);
-  }
-  .navbar{display:flex; align-items:center; justify-content:space-between; height:70px;}
-  .wordmark{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--white);}
-  .monogram{
-    width:34px; height:34px;
-    border:1.5px solid var(--gold);
-    border-radius:50%;
-    display:grid; place-items:center;
-    font-family:'Fraunces',serif;
-    font-size:14px; font-weight:600;
-    color:var(--gold-light);
-  }
-  .wordmark-text{font-size:15px; font-weight:600; letter-spacing:0.01em;}
-  nav.links{display:flex; font-size:13.5px;}
-  nav.links a{
-    text-decoration:none; color:rgba(255,255,255,0.78);
-    padding:8px 16px; transition:color 0.2s;
-  }
-  nav.links a:hover, nav.links a:focus-visible{color:var(--gold-light);}
-  nav.links a:focus-visible{outline:1px solid var(--gold-light); outline-offset:2px;}
-  .nav-toggle{
-    display:none; background:none; border:1px solid rgba(255,255,255,0.3);
-    color:var(--white); width:36px; height:36px; align-items:center; justify-content:center; cursor:pointer;
-    border-radius:4px;
-  }
-  @media (max-width:780px){
-    nav.links{
-      position:absolute; top:70px; left:0; right:0; background:var(--navy);
-      flex-direction:column; padding:8px 20px 16px; display:none;
-      border-top:1px solid rgba(255,255,255,0.1);
-    }
+  .skip-link{position:absolute; left:16px; top:-60px; background:var(--lime); color:var(--bg); padding:12px 20px; font-weight:600; border-radius:8px; text-decoration:none; z-index:100;}
+  .skip-link:focus{top:12px;}
+
+  /* header */
+  header{position:sticky; top:0; z-index:50; background:rgba(11,14,17,0.82); backdrop-filter:blur(14px); border-bottom:1px solid var(--line);}
+  .bar{display:flex; align-items:center; justify-content:space-between; height:68px; gap:16px;}
+  .brand{display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:600; letter-spacing:-0.01em;}
+  .logo{width:34px; height:34px; border-radius:9px; background:var(--lime); color:var(--bg); display:grid; place-items:center; font-family:var(--mono); font-weight:500; font-size:14px;}
+  nav.links{display:flex; gap:4px; align-items:center;}
+  nav.links a{font-size:14.5px; color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:8px; transition:color .15s, background .15s;}
+  nav.links a:hover{color:var(--text); background:var(--surface-2);}
+  nav.links a.cta-link{color:var(--bg); background:var(--lime); font-weight:600; margin-left:8px;}
+  nav.links a.cta-link:hover{background:#cdfb72;}
+  .nav-toggle{display:none; background:var(--surface); border:1px solid var(--line-strong); color:var(--text); font:inherit; font-size:14px; padding:8px 14px; border-radius:8px; cursor:pointer;}
+  @media (max-width:960px){
+    nav.links{position:absolute; top:68px; left:0; right:0; background:var(--bg); flex-direction:column; align-items:stretch; padding:10px 18px 18px; border-bottom:1px solid var(--line); display:none;}
     nav.links.open{display:flex;}
-    nav.links a{padding:13px 0; border-bottom:1px solid rgba(255,255,255,0.08);}
-    .nav-toggle{display:flex;}
+    nav.links a{padding:13px 12px;}
+    nav.links a.cta-link{margin:8px 0 0; text-align:center;}
+    .nav-toggle{display:block;}
   }
 
-  /* ---------- hero ---------- */
-  .hero{
-    background:linear-gradient(155deg, var(--navy) 0%, var(--navy-2) 100%);
-    color:var(--white);
-    padding:100px 0 88px;
-  }
-  .hero .eyebrow{margin-bottom:18px; color:var(--gold);}
-  .hero h1{
-    font-size:clamp(38px,6vw,58px);
-    line-height:1.08;
-    color:var(--white);
-    max-width:760px;
-  }
-  .hero-sub{
-    max-width:600px;
-    font-size:17.5px;
-    color:rgba(255,255,255,0.82);
-    margin:22px 0 34px;
-    line-height:1.7;
-  }
-  .hero-cta{display:flex; flex-wrap:wrap; margin-bottom:44px;}
-  .hero-cta .btn{margin:0 14px 10px 0;}
-  .btn{
-    display:inline-flex; align-items:center; gap:8px;
-    font-size:14px; font-weight:600;
-    padding:13px 24px;
-    text-decoration:none;
-    border-radius:3px;
-    transition:transform 0.15s, box-shadow 0.15s;
-  }
-  .btn:hover{transform:translateY(-1px);}
-  .btn-gold{background:var(--gold); color:var(--navy);}
-  .btn-gold:hover{background:var(--gold-light); box-shadow:0 6px 18px rgba(184,144,47,0.35);}
-  .btn-outline{border:1.5px solid rgba(255,255,255,0.35); color:var(--white);}
-  .btn-outline:hover{border-color:var(--gold-light); color:var(--gold-light);}
-  .hero-stats{
-    display:flex; flex-wrap:wrap;
-    padding-top:32px;
-    border-top:1px solid rgba(255,255,255,0.15);
-  }
-  .hero-stats > div{margin-right:48px;}
-  .hero-stats .stat-num{font-family:'Fraunces',serif; font-size:30px; color:var(--gold-light);}
-  .hero-stats .stat-label{font-size:12.5px; color:rgba(255,255,255,0.65); margin-top:2px; letter-spacing:0.03em;}
+  /* hero */
+  .hero{position:relative; padding:84px 0 0; overflow:hidden;}
+  .hero::before{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size:56px 56px; opacity:.35; mask-image:radial-gradient(ellipse 70% 60% at 30% 20%, #000 20%, transparent 75%); -webkit-mask-image:radial-gradient(ellipse 70% 60% at 30% 20%, #000 20%, transparent 75%);}
+  .hero::after{content:""; position:absolute; width:620px; height:620px; right:-160px; top:-220px; background:radial-gradient(circle, rgba(184,243,74,0.14), transparent 65%); pointer-events:none;}
+  .hero .wrap{position:relative; z-index:1;}
+  .hero-grid{display:grid; grid-template-columns:1.25fr 1fr; gap:56px; align-items:center;}
+  @media (max-width:980px){.hero-grid{grid-template-columns:minmax(0,1fr); gap:44px;}}
+  .badge{display:inline-flex; align-items:center; gap:9px; font-family:var(--mono); font-size:12.5px; color:var(--muted); border:1px solid var(--line-strong); background:rgba(18,23,28,.8); padding:7px 14px; border-radius:999px; margin-bottom:26px;}
+  .badge::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--lime); box-shadow:0 0 0 4px rgba(184,243,74,.18);}
+  .hero h1{font-size:clamp(40px,5.8vw,76px); line-height:1.03; letter-spacing:-0.035em; font-weight:650;}
+  .hero-sub{max-width:560px; margin:26px 0 34px; font-size:18px; color:var(--muted);}
+  .cta{display:flex; flex-wrap:wrap; gap:12px;}
+  .btn{display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:15px; text-decoration:none; padding:13px 22px; border-radius:10px; border:1px solid var(--line-strong); transition:transform .15s, background .15s, border-color .15s;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-lime{background:var(--lime); color:var(--bg); border-color:var(--lime);}
+  .btn-lime:hover{background:#cdfb72;}
+  .btn-ghost{background:var(--surface); color:var(--text);}
+  .btn-ghost:hover{border-color:var(--lime);}
 
-  /* ---------- section shell ---------- */
-  section{padding:84px 0;}
-  section.alt{background:var(--paper-alt);}
-  .section-head{margin-bottom:44px; max-width:640px;}
-  .section-head h2{font-size:32px; margin-top:10px;}
-  .section-head p{color:var(--ink-soft); margin-top:12px; font-size:15.5px;}
+  .term{background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--r); overflow:hidden; box-shadow:0 30px 60px -30px rgba(0,0,0,.7);}
+  .term-bar{display:flex; align-items:center; gap:7px; padding:12px 16px; border-bottom:1px solid var(--line); background:var(--surface-2);}
+  .term-bar i{width:10px; height:10px; border-radius:50%; background:var(--line-strong); display:block;}
+  .term-bar span{margin-left:10px; font-family:var(--mono); font-size:12px; color:var(--faint);}
+  .term-body{padding:18px 18px 20px; font-family:var(--mono); font-size:13px; line-height:1.75;}
+  .term-body .prompt{color:var(--lime); margin-bottom:6px;}
+  .term-body .prompt em{font-style:normal; color:var(--muted);}
+  .log{display:grid; grid-template-columns:62px 52px 1fr; gap:10px; align-items:baseline;}
+  .log .h{color:var(--amber);}
+  .log .d{color:var(--faint);}
+  .log .m{color:var(--text); overflow-wrap:anywhere;}
+  .cursor{display:inline-block; width:8px; height:15px; background:var(--lime); vertical-align:-3px; animation:blink 1.1s steps(1) infinite;}
+  @keyframes blink{50%{opacity:0;}}
 
-  /* ---------- about ---------- */
-  .about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:56px;}
-  @media (max-width:800px){.about-grid{grid-template-columns:1fr;}}
-  .about-body p{color:var(--ink-soft); margin:0 0 18px; font-size:16px;}
-  .about-body strong{color:var(--navy); font-weight:600;}
-  .credential-card{
-    background:var(--white);
-    border:1px solid var(--line);
-    border-top:3px solid var(--gold);
-    padding:28px 26px;
-    border-radius:4px;
-  }
-  .credential-card .row{
-    display:flex; justify-content:space-between; align-items:baseline;
-    padding:12px 0; border-bottom:1px solid var(--line); font-size:14px;
-  }
-  .credential-card .row:last-child{border-bottom:none;}
-  .credential-card .k{color:var(--ink-faint); font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;}
-  .credential-card .v{font-weight:600; color:var(--navy); text-align:right;}
+  .tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:64px;}
+  @media (max-width:820px){.tiles{grid-template-columns:1fr 1fr;}}
+  .tile{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:22px 22px 20px;}
+  .tile .n{font-size:clamp(34px,4vw,48px); font-weight:650; letter-spacing:-0.03em; line-height:1;}
+  .tile .l{margin-top:10px; font-size:13.5px; color:var(--muted);}
+  .tile:nth-child(1) .n{color:var(--lime);} .tile:nth-child(2) .n{color:var(--cyan);} .tile:nth-child(3) .n{color:var(--amber);}
 
-  /* ---------- skills ---------- */
-  .skills-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:36px;}
-  @media (max-width:700px){.skills-grid{grid-template-columns:1fr;}}
-  .skill-group h3{
-    font-family:'Inter',sans-serif; font-size:13px; font-weight:700;
-    letter-spacing:0.05em; text-transform:uppercase; color:var(--navy);
-    margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid var(--gold);
-  }
-  .pill-row{display:flex; flex-wrap:wrap;}
-  .pill{
-    font-size:13.5px; font-weight:500;
-    padding:9px 16px; margin:0 10px 10px 0;
-    background:var(--white); border:1px solid var(--line); border-radius:20px;
-    color:var(--ink);
-  }
-  .pill.learning{
-    border-style:dashed; color:var(--ink-soft); background:transparent;
-  }
-  .legend{font-size:12px; color:var(--ink-faint); margin-top:6px;}
+  /* sections */
+  section{padding:104px 0 0;}
+  .eyebrow{font-family:var(--mono); font-size:12.5px; color:var(--lime); letter-spacing:.02em; margin-bottom:14px; display:block;}
+  .sec-title{font-size:clamp(30px,3.6vw,46px); max-width:720px; margin-bottom:12px;}
+  .sec-sub{color:var(--muted); max-width:560px; margin-bottom:40px; font-size:16px;}
+  .sec-title + .sec-space{height:36px;}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:28px;}
+  .card h3{font-size:14px; font-family:var(--mono); font-weight:500; color:var(--muted); letter-spacing:.02em; margin-bottom:18px;}
 
-  /* ---------- projects ---------- */
-  .project-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
-  @media (max-width:760px){.project-grid{grid-template-columns:1fr;}}
-  .project-card{
-    background:var(--white);
-    border:1px solid var(--line);
-    border-left:3px solid var(--navy);
-    border-radius:4px;
-    padding:26px 26px 22px;
-    display:flex; flex-direction:column; gap:10px;
-    transition:box-shadow 0.2s, border-left-color 0.2s;
-  }
-  .project-card:hover{box-shadow:0 10px 28px rgba(11,37,69,0.09); border-left-color:var(--gold);}
-  .project-card .ptag{font-size:11.5px; font-weight:700; letter-spacing:0.05em; color:var(--blue); text-transform:uppercase;}
-  .project-card h3{font-size:19px; font-weight:600;}
-  .project-card p{color:var(--ink-soft); font-size:14px; margin:0; flex-grow:1;}
-  .project-card .plink{
-    font-size:13px; font-weight:600; text-decoration:none; color:var(--navy);
-    display:inline-flex; align-items:center; gap:6px; width:fit-content;
-    border-bottom:1.5px solid var(--gold);
-  }
-  .project-card .status-badge{
-    font-size:11.5px; font-weight:600; letter-spacing:0.03em; color:var(--ink-faint);
-  }
+  /* about */
+  .about-grid{display:grid; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); gap:14px;}
+  @media (max-width:900px){.about-grid{grid-template-columns:minmax(0,1fr);}}
+  .about-grid .prose p{color:var(--muted); margin-bottom:18px; max-width:680px;}
+  .about-grid .prose p:last-child{margin-bottom:0;}
+  .about-grid .prose strong{color:var(--text); font-weight:600;}
+  dl.facts{margin:0;}
+  dl.facts div{display:flex; justify-content:space-between; gap:16px; padding:13px 0; border-bottom:1px solid var(--line);}
+  dl.facts div:last-child{border-bottom:0; padding-bottom:0;}
+  dl.facts dt{color:var(--muted); font-size:14px;}
+  dl.facts dd{margin:0; font-weight:600; text-align:right; font-size:14.5px;}
 
-  /* ---------- certifications ---------- */
-  .cert-list{display:flex; flex-direction:column;}
-  .cert-item{
-    display:grid; grid-template-columns:120px 1fr auto;
-    gap:20px; align-items:start;
-    padding:24px 0; border-bottom:1px solid var(--line);
-  }
-  @media (max-width:700px){
-    .cert-item{grid-template-columns:1fr; gap:8px;}
-  }
-  .cert-item:first-child{padding-top:0;}
-  .cert-date{font-size:12.5px; font-weight:600; color:var(--gold-deep); letter-spacing:0.02em; padding-top:3px;}
-  .cert-main h3{font-size:17px; font-weight:600; margin-bottom:5px;}
-  .cert-main .issuer{font-size:13.5px; color:var(--ink-soft);}
-  .cert-main .subcourses{margin-top:10px; font-size:12.5px; color:var(--ink-soft);}
-  .cert-main .subcourses div{margin-bottom:3px;}
-  .cert-verify{
-    font-size:12.5px; font-weight:600; color:var(--navy); text-decoration:none;
-    border-bottom:1.5px solid var(--gold); white-space:nowrap; align-self:start;
-  }
+  /* status */
+  .heat-box{max-width:100%; overflow-x:auto; padding-bottom:6px;}
+  .heat-months{display:grid; grid-template-columns:repeat(21,minmax(14px,1fr)); gap:4px; font-family:var(--mono); font-size:11px; color:var(--faint); margin-bottom:8px; white-space:nowrap;}
+  .heat{display:grid; grid-template-columns:repeat(21,minmax(14px,1fr)); grid-template-rows:repeat(7,22px); grid-auto-flow:column; gap:4px;}
+  .heat i{display:block; border-radius:5px; background:var(--heat-0);}
+  .heat i.l1{background:var(--heat-1);} .heat i.l2{background:var(--heat-2);} .heat i.l3{background:var(--heat-3);} .heat i.l4{background:var(--heat-4);}
+  .heat-foot{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:16px;}
+  .heat-foot p{font-size:14px; color:var(--muted);}
+  .legend{display:flex; align-items:center; gap:5px; font-family:var(--mono); font-size:11px; color:var(--faint);}
+  .legend i{width:13px; height:13px; border-radius:3px; display:block; background:var(--heat-0);}
+  .bars-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:14px;}
+  @media (max-width:760px){.bars-grid{grid-template-columns:minmax(0,1fr);}}
+  .bar-item{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px;}
+  .bar-item .top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px;}
+  .bar-item .nm{font-weight:500;}
+  .bar-item .pc{font-family:var(--mono); font-size:13px;}
+  .bar-item .tr{height:6px; background:var(--heat-0); border-radius:99px; overflow:hidden; display:block;}
+  .bar-item .tr b{display:block; height:100%; border-radius:99px; background:var(--lime);}
+  .bar-item.c .tr b{background:var(--cyan);} .bar-item.a .tr b{background:var(--amber);}
+  .note{font-size:13.5px; color:var(--faint); margin-top:16px;}
 
-  /* ---------- journey ---------- */
-  .timeline{position:relative; padding-left:32px;}
-  .timeline::before{content:""; position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:var(--line);}
-  .tl-item{position:relative; padding-bottom:34px;}
-  .tl-item:last-child{padding-bottom:0;}
-  .tl-item::before{
-    content:""; position:absolute; left:-32px; top:4px;
-    width:12px; height:12px; border-radius:50%;
-    background:var(--paper); border:2.5px solid var(--gold);
-  }
-  .tl-date{font-size:12.5px; font-weight:700; color:var(--navy); letter-spacing:0.03em;}
-  .tl-item h3{font-size:16.5px; font-weight:600; margin:6px 0 4px;}
-  .tl-item p{color:var(--ink-soft); font-size:14px; margin:0;}
+  /* skills */
+  .skills-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.9fr); gap:14px;}
+  @media (max-width:900px){.skills-grid{grid-template-columns:minmax(0,1fr);}}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-size:14.5px; padding:7px 13px; border-radius:9px; background:var(--surface-2); border:1px solid var(--line-strong); font-weight:500;}
+  .chip.learning{background:transparent; border-style:dashed; border-color:var(--faint); color:var(--muted);}
 
-  /* ---------- contact ---------- */
-  .contact-section{
-    background:linear-gradient(155deg, var(--navy) 0%, var(--navy-2) 100%);
-    color:var(--white); text-align:center;
-  }
-  .contact-section h2{font-size:clamp(28px,5vw,42px); max-width:640px; margin:0 auto 16px; color:var(--white);}
-  .contact-section p{color:rgba(255,255,255,0.78); max-width:460px; margin:0 auto 32px;}
-  .contact-row{display:flex; justify-content:center; flex-wrap:wrap;}
-  .contact-row .btn{margin:0 7px 10px;}
+  /* projects */
+  .proj-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px;}
+  @media (max-width:820px){.proj-grid{grid-template-columns:minmax(0,1fr);}}
+  .proj{display:flex; flex-direction:column; gap:14px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:26px; position:relative; transition:border-color .2s, transform .2s, background .2s; --c:var(--lime);}
+  .proj:hover{border-color:var(--c); transform:translateY(-3px); background:var(--surface-2);}
+  .proj.c{--c:var(--cyan);} .proj.a{--c:var(--amber);}
+  .proj .tag{font-family:var(--mono); font-size:12px; color:var(--c); display:flex; align-items:center; gap:8px;}
+  .proj .tag::before{content:""; width:8px; height:8px; border-radius:2px; background:var(--c);}
+  .proj h3{font-size:22px; letter-spacing:-0.02em;}
+  .proj p{color:var(--muted); font-size:15.5px; flex-grow:1;}
+  .stack{display:flex; flex-wrap:wrap; gap:6px;}
+  .stack span{font-family:var(--mono); font-size:11.5px; color:var(--muted); background:rgba(255,255,255,.05); padding:3px 9px; border-radius:6px;}
+  .proj .go{font-weight:600; font-size:14.5px; text-decoration:none; color:var(--c); width:fit-content; display:inline-flex; gap:8px;}
+  .proj .go:hover{text-decoration:underline; text-underline-offset:4px;}
+  .proj .state{font-family:var(--mono); font-size:12px; color:var(--faint);}
 
-  footer{padding:26px 0; text-align:center; font-size:12.5px; color:var(--ink-faint); background:var(--paper);}
+  /* certs */
+  .cert-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px;}
+  @media (max-width:820px){.cert-grid{grid-template-columns:minmax(0,1fr);}}
+  .cert{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:26px; display:flex; flex-direction:column; gap:8px;}
+  .cert .dt{font-family:var(--mono); font-size:12px; color:var(--cyan);}
+  .cert h3{font-size:20px; line-height:1.25;}
+  .cert .iss{color:var(--muted); font-size:15px;}
+  .cert .sub{margin-top:8px; padding-top:12px; border-top:1px solid var(--line); font-size:13.5px; color:var(--muted);}
+  .cert .sub div{margin-bottom:3px;}
+  .cert .go{margin-top:auto; padding-top:10px; font-weight:600; font-size:14.5px; color:var(--lime); text-decoration:none; width:fit-content;}
+  .cert .go:hover{text-decoration:underline; text-underline-offset:4px;}
 
-  /* ---------- skip link ---------- */
-  .skip-link{
-    position:absolute; left:16px; top:-60px;
-    background:var(--white); color:var(--navy);
-    padding:12px 20px; border-radius:4px; font-weight:600; font-size:14px;
-    text-decoration:none; z-index:1100;
-    transition:top 0.2s;
-  }
-  .skip-link:focus{top:16px;}
+  /* journey */
+  .tl{list-style:none; margin:0; padding:0 0 0 30px; position:relative; max-width:860px;}
+  .tl::before{content:""; position:absolute; left:6px; top:8px; bottom:8px; width:2px; background:linear-gradient(var(--line-strong), var(--line-strong)); }
+  .tl li{position:relative; padding-bottom:30px;}
+  .tl li:last-child{padding-bottom:0;}
+  .tl li::before{content:""; position:absolute; left:-30px; top:7px; width:14px; height:14px; border-radius:50%; background:var(--bg); border:2px solid var(--lime);}
+  .tl li.new::before{background:var(--lime); box-shadow:0 0 0 5px rgba(184,243,74,.16);}
+  .tl .dt{font-family:var(--mono); font-size:12.5px; color:var(--lime); margin-bottom:4px;}
+  .tl h3{font-size:20px; margin-bottom:6px;}
+  .tl p{color:var(--muted); font-size:15.5px; max-width:640px;}
+
+  /* contact */
+  .contact-box{margin-top:120px; position:relative; overflow:hidden; background:var(--surface); border:1px solid var(--line-strong); border-radius:24px; padding:72px 48px; text-align:center;}
+  .contact-box::before{content:""; position:absolute; left:50%; top:-260px; width:640px; height:520px; transform:translateX(-50%); background:radial-gradient(circle, rgba(184,243,74,.16), transparent 65%); pointer-events:none;}
+  .contact-box > *{position:relative;}
+  .contact-box h2{font-size:clamp(32px,5vw,60px); letter-spacing:-0.035em; max-width:820px; margin:0 auto 18px; line-height:1.05;}
+  .contact-box p{color:var(--muted); max-width:460px; margin:0 auto 32px;}
+  .contact-box .cta{justify-content:center;}
+  @media (max-width:700px){.contact-box{padding:52px 22px; border-radius:18px;}}
+  footer{padding:36px 0 44px; color:var(--faint); font-family:var(--mono); font-size:12.5px;}
+  footer .wrap{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+
+  /* reveal */
+  .js .rv{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
+  .js .rv.in{opacity:1; transform:none;}
 </style>
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
 <a class="skip-link" href="#top">Skip to content</a>
 
 <header>
-  <div class="wrap navbar">
-    <a href="#top" class="wordmark">
-      <span class="monogram">RR</span>
-      <span class="wordmark-text">Roja Rani Repalle</span>
-    </a>
-    <nav class="links" id="navLinks">
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span class="logo" aria-hidden="true">RR</span>Roja Rani Repalle</a>
+    <nav class="links" id="navLinks" aria-label="Primary">
       <a href="#about">About</a>
+      <a href="#status">Status</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
       <a href="#journey">Journey</a>
-      <a href="#contact">Contact</a>
+      <a class="cta-link" href="#contact">Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 1H16" stroke="currentColor"/><path d="M0 6H16" stroke="currentColor"/><path d="M0 11H16" stroke="currentColor"/></svg>
-    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">Menu</button>
   </div>
 </header>
 
 <main id="top">
 
-  <section class="hero">
+  <div class="hero">
     <div class="wrap">
-      <div class="eyebrow">TECHNOLOGY &amp; E-COMMERCE PROFESSIONAL</div>
-      <h1>Twelve years building commerce systems. Now building the AI layer on top of them.</h1>
-      <p class="hero-sub">I'm Roja Rani Repalle — a technology professional based in Hyderabad, India, combining over a decade of e-commerce and business experience with a focused 2026 transition into Machine Learning, Generative AI, and Agentic AI.</p>
-      <div class="hero-cta">
-        <a class="btn btn-gold" href="#projects">View Projects</a>
-        <a class="btn btn-outline" href="#contact">Get in Touch</a>
+      <div class="hero-grid">
+        <div>
+          <span class="badge">Learning in public · last commit Sep 21</span>
+          <h1>Twelve years building commerce systems. Now building the <span class="hl">AI layer</span> on top of them.</h1>
+          <p class="hero-sub">I'm Roja Rani Repalle — a technology professional based in Hyderabad, India, combining over a decade of e-commerce and business experience with a focused 2026 transition into Machine Learning, Generative AI, and Agentic AI.</p>
+          <div class="cta">
+            <a class="btn btn-lime" href="#projects">View projects →</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="term" role="group" aria-label="Recent learning commits">
+          <div class="term-bar"><i></i><i></i><i></i><span>learning-repo — git log</span></div>
+          <div class="term-body">
+            <div class="prompt">$ <em>git log --oneline</em></div>
+            <div class="log"><span class="h">3972361</span><span class="d">Sep 20</span><span class="m">Reorganize GenAI LLM files into Langchain subfolder, add prompt engineering notebooks</span></div>
+            <div class="log"><span class="h">60c5377</span><span class="d">Sep 20</span><span class="m">Gen AI Practice</span></div>
+            <div class="log"><span class="h">91db746</span><span class="d">Sep 06</span><span class="m">DL CNN</span></div>
+            <div class="log"><span class="h">1ca1107</span><span class="d">Aug 27</span><span class="m">Multiclass classification in DL</span></div>
+            <div class="log"><span class="h">a2581fa</span><span class="d">Aug 22</span><span class="m">Opencv color detection practice</span></div>
+            <div class="log"><span class="h">16952de</span><span class="d">Aug 20</span><span class="m">Opencv practice</span></div>
+            <div class="log"><span class="h">b4b9d6b</span><span class="d">Aug 20</span><span class="m">DL basics</span></div>
+            <div class="log"><span class="h">eabc54b</span><span class="d">Aug 20</span><span class="m">DL basics</span></div>
+            <div class="prompt" style="margin-top:8px">$ <span class="cursor" aria-hidden="true"></span></div>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div><div class="stat-num display">12+</div><div class="stat-label">Years Experience</div></div>
-        <div><div class="stat-num display">4</div><div class="stat-label">AI/ML Certifications</div></div>
-        <div><div class="stat-num display">2026</div><div class="stat-label">Began AI Transition</div></div>
+      <div class="tiles">
+        <div class="tile rv"><div class="n">12+</div><div class="l">Years experience</div></div>
+        <div class="tile rv"><div class="n">4</div><div class="l">AI/ML certifications</div></div>
+        <div class="tile rv"><div class="n">159</div><div class="l">Commits across 6 repos</div></div>
+        <div class="tile rv"><div class="n">2026</div><div class="l">Began AI transition</div></div>
       </div>
     </div>
-  </section>
+  </div>
 
   <section id="about" aria-labelledby="about-heading">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">About</div>
-        <h2 id="about-heading">Business grounding, new technical toolkit</h2>
-      </div>
+      <span class="eyebrow">01 / about</span>
+      <h2 class="sec-title" id="about-heading">Business grounding, new technical toolkit</h2>
+      <div class="sec-space"></div>
       <div class="about-grid">
-        <div class="about-body">
+        <div class="card prose rv">
           <p>I'm <strong>Roja Rani Repalle</strong>, a technology professional with over twelve years of industry experience, much of it spent deep in the e-commerce domain — digital transformation initiatives, customer-facing platforms, and the systems that keep an online business running.</p>
           <p>In 2026, I started a focused transition into <strong>Artificial Intelligence, Machine Learning, Generative AI, and Agentic AI</strong>. Not a reinvention from scratch, but an extension of what I already know — I understand the business problems; now I'm learning to bring modern AI to bear on them.</p>
           <p>My goal is to combine that business and e-commerce grounding with practical AI skills — computer vision, OCR, language models, and agentic tooling — to build things that are genuinely useful, not just technically interesting. I document the journey publicly, and I'm glad if it helps someone else starting their own path into AI or data science.</p>
         </div>
-        <div class="credential-card">
-          <div class="row"><span class="k">Experience</span><span class="v">12+ Years</span></div>
-          <div class="row"><span class="k">Domain</span><span class="v">E-commerce &amp; Tech</span></div>
-          <div class="row"><span class="k">AI Transition</span><span class="v">Since 2026</span></div>
-          <div class="row"><span class="k">Location</span><span class="v">Hyderabad, IN</span></div>
-          <div class="row"><span class="k">Focus</span><span class="v">ML · GenAI · Agentic AI</span></div>
+        <div class="card rv">
+          <h3>quick_facts</h3>
+          <dl class="facts">
+            <div><dt>Experience</dt><dd>12+ Years</dd></div>
+            <div><dt>Domain</dt><dd>E-commerce &amp; Tech</dd></div>
+            <div><dt>AI transition</dt><dd>Since 2026</dd></div>
+            <div><dt>Location</dt><dd>Hyderabad, IN</dd></div>
+            <div><dt>Focus</dt><dd>ML · GenAI · Agentic AI</dd></div>
+          </dl>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="alt" aria-labelledby="skills-heading">
+  <section id="status" aria-labelledby="status-heading">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Skills</div>
-        <h2 id="skills-heading">Commerce foundation, AI in progress</h2>
+      <span class="eyebrow">02 / status</span>
+      <h2 class="sec-title" id="status-heading">Learning, measured in commits</h2>
+      <p class="sec-sub">Pulled from the git history of my six learning repositories.</p>
+      <div class="card rv">
+        <div class="heat-box" role="img" aria-label="Commit activity by day, May 4 to Sep 21, 2026: 44 active days and 156 commits.">
+          <div class="heat-months" aria-hidden="true"><span>May</span><span></span><span></span><span></span><span>Jun</span><span></span><span></span><span></span><span>Jul</span><span></span><span></span><span></span><span>Aug</span><span></span><span></span><span></span><span></span><span>Sep</span><span></span><span></span><span></span></div>
+          <div class="heat" aria-hidden="true"><i class="l0" title="0 commits on May 4"></i><i class="l0" title="0 commits on May 5"></i><i class="l3" title="6 commits on May 6"></i><i class="l3" title="4 commits on May 7"></i><i class="l2" title="2 commits on May 8"></i><i class="l0" title="0 commits on May 9"></i><i class="l1" title="1 commit on May 10"></i><i class="l3" title="5 commits on May 11"></i><i class="l4" title="16 commits on May 12"></i><i class="l0" title="0 commits on May 13"></i><i class="l1" title="1 commit on May 14"></i><i class="l0" title="0 commits on May 15"></i><i class="l0" title="0 commits on May 16"></i><i class="l1" title="1 commit on May 17"></i><i class="l2" title="3 commits on May 18"></i><i class="l2" title="3 commits on May 19"></i><i class="l0" title="0 commits on May 20"></i><i class="l3" title="7 commits on May 21"></i><i class="l4" title="8 commits on May 22"></i><i class="l1" title="1 commit on May 23"></i><i class="l0" title="0 commits on May 24"></i><i class="l0" title="0 commits on May 25"></i><i class="l0" title="0 commits on May 26"></i><i class="l4" title="9 commits on May 27"></i><i class="l0" title="0 commits on May 28"></i><i class="l4" title="8 commits on May 29"></i><i class="l4" title="14 commits on May 30"></i><i class="l1" title="1 commit on May 31"></i><i class="l0" title="0 commits on Jun 1"></i><i class="l0" title="0 commits on Jun 2"></i><i class="l1" title="1 commit on Jun 3"></i><i class="l1" title="1 commit on Jun 4"></i><i class="l0" title="0 commits on Jun 5"></i><i class="l2" title="2 commits on Jun 6"></i><i class="l3" title="5 commits on Jun 7"></i><i class="l3" title="4 commits on Jun 8"></i><i class="l1" title="1 commit on Jun 9"></i><i class="l3" title="4 commits on Jun 10"></i><i class="l0" title="0 commits on Jun 11"></i><i class="l2" title="3 commits on Jun 12"></i><i class="l0" title="0 commits on Jun 13"></i><i class="l2" title="2 commits on Jun 14"></i><i class="l0" title="0 commits on Jun 15"></i><i class="l0" title="0 commits on Jun 16"></i><i class="l0" title="0 commits on Jun 17"></i><i class="l0" title="0 commits on Jun 18"></i><i class="l0" title="0 commits on Jun 19"></i><i class="l0" title="0 commits on Jun 20"></i><i class="l0" title="0 commits on Jun 21"></i><i class="l0" title="0 commits on Jun 22"></i><i class="l1" title="1 commit on Jun 23"></i><i class="l0" title="0 commits on Jun 24"></i><i class="l0" title="0 commits on Jun 25"></i><i class="l2" title="3 commits on Jun 26"></i><i class="l0" title="0 commits on Jun 27"></i><i class="l0" title="0 commits on Jun 28"></i><i class="l0" title="0 commits on Jun 29"></i><i class="l2" title="3 commits on Jun 30"></i><i class="l0" title="0 commits on Jul 1"></i><i class="l3" title="5 commits on Jul 2"></i><i class="l0" title="0 commits on Jul 3"></i><i class="l0" title="0 commits on Jul 4"></i><i class="l0" title="0 commits on Jul 5"></i><i class="l0" title="0 commits on Jul 6"></i><i class="l2" title="3 commits on Jul 7"></i><i class="l1" title="1 commit on Jul 8"></i><i class="l0" title="0 commits on Jul 9"></i><i class="l0" title="0 commits on Jul 10"></i><i class="l0" title="0 commits on Jul 11"></i><i class="l1" title="1 commit on Jul 12"></i><i class="l0" title="0 commits on Jul 13"></i><i class="l2" title="2 commits on Jul 14"></i><i class="l0" title="0 commits on Jul 15"></i><i class="l1" title="1 commit on Jul 16"></i><i class="l0" title="0 commits on Jul 17"></i><i class="l0" title="0 commits on Jul 18"></i><i class="l0" title="0 commits on Jul 19"></i><i class="l0" title="0 commits on Jul 20"></i><i class="l0" title="0 commits on Jul 21"></i><i class="l0" title="0 commits on Jul 22"></i><i class="l0" title="0 commits on Jul 23"></i><i class="l1" title="1 commit on Jul 24"></i><i class="l0" title="0 commits on Jul 25"></i><i class="l0" title="0 commits on Jul 26"></i><i class="l0" title="0 commits on Jul 27"></i><i class="l0" title="0 commits on Jul 28"></i><i class="l0" title="0 commits on Jul 29"></i><i class="l0" title="0 commits on Jul 30"></i><i class="l0" title="0 commits on Jul 31"></i><i class="l0" title="0 commits on Aug 1"></i><i class="l2" title="2 commits on Aug 2"></i><i class="l0" title="0 commits on Aug 3"></i><i class="l0" title="0 commits on Aug 4"></i><i class="l0" title="0 commits on Aug 5"></i><i class="l0" title="0 commits on Aug 6"></i><i class="l0" title="0 commits on Aug 7"></i><i class="l0" title="0 commits on Aug 8"></i><i class="l0" title="0 commits on Aug 9"></i><i class="l0" title="0 commits on Aug 10"></i><i class="l0" title="0 commits on Aug 11"></i><i class="l3" title="7 commits on Aug 12"></i><i class="l0" title="0 commits on Aug 13"></i><i class="l0" title="0 commits on Aug 14"></i><i class="l0" title="0 commits on Aug 15"></i><i class="l0" title="0 commits on Aug 16"></i><i class="l0" title="0 commits on Aug 17"></i><i class="l0" title="0 commits on Aug 18"></i><i class="l0" title="0 commits on Aug 19"></i><i class="l2" title="3 commits on Aug 20"></i><i class="l0" title="0 commits on Aug 21"></i><i class="l2" title="2 commits on Aug 22"></i><i class="l0" title="0 commits on Aug 23"></i><i class="l0" title="0 commits on Aug 24"></i><i class="l0" title="0 commits on Aug 25"></i><i class="l0" title="0 commits on Aug 26"></i><i class="l1" title="1 commit on Aug 27"></i><i class="l0" title="0 commits on Aug 28"></i><i class="l0" title="0 commits on Aug 29"></i><i class="l0" title="0 commits on Aug 30"></i><i class="l0" title="0 commits on Aug 31"></i><i class="l0" title="0 commits on Sep 1"></i><i class="l0" title="0 commits on Sep 2"></i><i class="l0" title="0 commits on Sep 3"></i><i class="l0" title="0 commits on Sep 4"></i><i class="l0" title="0 commits on Sep 5"></i><i class="l1" title="1 commit on Sep 6"></i><i class="l0" title="0 commits on Sep 7"></i><i class="l0" title="0 commits on Sep 8"></i><i class="l0" title="0 commits on Sep 9"></i><i class="l0" title="0 commits on Sep 10"></i><i class="l0" title="0 commits on Sep 11"></i><i class="l0" title="0 commits on Sep 12"></i><i class="l0" title="0 commits on Sep 13"></i><i class="l0" title="0 commits on Sep 14"></i><i class="l0" title="0 commits on Sep 15"></i><i class="l0" title="0 commits on Sep 16"></i><i class="l0" title="0 commits on Sep 17"></i><i class="l0" title="0 commits on Sep 18"></i><i class="l0" title="0 commits on Sep 19"></i><i class="l2" title="3 commits on Sep 20"></i><i class="l2" title="3 commits on Sep 21"></i><i style="visibility:hidden"></i><i style="visibility:hidden"></i><i style="visibility:hidden"></i><i style="visibility:hidden"></i><i style="visibility:hidden"></i><i style="visibility:hidden"></i></div>
+        </div>
+        <div class="heat-foot">
+          <p><b>156 commits</b> on <b>44 days</b> since May 4. Each column is a week, Monday to Sunday.</p>
+          <div class="legend" aria-hidden="true">Less <i></i><i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i><i style="background:var(--heat-4)"></i> More</div>
+        </div>
       </div>
+      <div class="bars-grid">
+        <div class="bar-item rv"><div class="top"><span class="nm">Python</span><span class="pc">100%</span></div><span class="tr"><b style="width:100%"></b></span></div>
+        <div class="bar-item rv"><div class="top"><span class="nm">NumPy</span><span class="pc">100%</span></div><span class="tr"><b style="width:100%"></b></span></div>
+        <div class="bar-item rv"><div class="top"><span class="nm">Pandas</span><span class="pc">100%</span></div><span class="tr"><b style="width:100%"></b></span></div>
+        <div class="bar-item rv"><div class="top"><span class="nm">SQL</span><span class="pc">90%</span></div><span class="tr"><b style="width:90%"></b></span></div>
+        <div class="bar-item rv"><div class="top"><span class="nm">Machine Learning</span><span class="pc">85%</span></div><span class="tr"><b style="width:85%"></b></span></div>
+        <div class="bar-item c rv"><div class="top"><span class="nm">Computer Vision</span><span class="pc">70%</span></div><span class="tr"><b style="width:70%"></b></span></div>
+        <div class="bar-item c rv"><div class="top"><span class="nm">Deep Learning</span><span class="pc">60%</span></div><span class="tr"><b style="width:60%"></b></span></div>
+        <div class="bar-item c rv"><div class="top"><span class="nm">Generative AI</span><span class="pc">50%</span></div><span class="tr"><b style="width:50%"></b></span></div>
+        <div class="bar-item a rv"><div class="top"><span class="nm">NLP</span><span class="pc">40%</span></div><span class="tr"><b style="width:40%"></b></span></div>
+        <div class="bar-item a rv"><div class="top"><span class="nm">Agentic AI</span><span class="pc">5%</span></div><span class="tr"><b style="width:5%"></b></span></div>
+      </div>
+      <p class="note">Percentages are my own estimates from repo activity, not test scores.</p>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="wrap">
+      <span class="eyebrow">03 / skills</span>
+      <h2 class="sec-title" id="skills-heading">Commerce foundation, AI in progress</h2>
+      <div class="sec-space"></div>
       <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Business &amp; Commerce</h3>
-          <div class="pill-row">
-            <span class="pill">E-commerce Domain Expertise</span>
-            <span class="pill">Digital Transformation</span>
-            <span class="pill">Business Analytics</span>
-            <span class="pill learning">Magento 2</span>
+        <div class="card rv">
+          <h3>business_and_commerce</h3>
+          <div class="chips">
+            <span class="chip">E-commerce Domain Expertise</span>
+            <span class="chip">Digital Transformation</span>
+            <span class="chip">Business Analytics</span>
+            <span class="chip learning">Magento 2</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3>AI &amp; Data</h3>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">NumPy</span>
-            <span class="pill">Pandas</span>
-            <span class="pill">SQL</span>
-            <span class="pill">Machine Learning</span>
-            <span class="pill">Deep Learning</span>
-            <span class="pill">Computer Vision (OpenCV, YOLOv8)</span>
-            <span class="pill">OCR</span>
-            <span class="pill">NLP</span>
-            <span class="pill">Generative AI</span>
-            <span class="pill">Streamlit</span>
-            <span class="pill">FastAPI</span>
-            <span class="pill learning">Agentic AI</span>
-            <span class="pill learning">Gradio</span>
-            <span class="pill learning">Tkinter</span>
+        <div class="card rv">
+          <h3>ai_and_data</h3>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Deep Learning</span>
+            <span class="chip">Computer Vision (OpenCV, YOLOv8)</span>
+            <span class="chip">OCR</span>
+            <span class="chip">NLP</span>
+            <span class="chip">Generative AI</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip learning">Agentic AI</span>
+            <span class="chip learning">Gradio</span>
+            <span class="chip learning">Tkinter</span>
           </div>
+          <p class="note">Dashed chips mark skills actively in progress, not claimed as mastered.</p>
         </div>
       </div>
-      <div class="legend">Dashed pills mark skills actively in progress, not claimed as mastered.</div>
     </div>
   </section>
 
   <section id="projects" aria-labelledby="projects-heading">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Projects</div>
-        <h2 id="projects-heading">What I've been building</h2>
-      </div>
-      <div class="project-grid">
-
-        <div class="project-card">
-          <span class="ptag">Computer Vision</span>
-          <h3>Computer Vision Toolkit</h3>
+      <span class="eyebrow">04 / projects</span>
+      <h2 class="sec-title" id="projects-heading">What I've been building</h2>
+      <div class="sec-space"></div>
+      <div class="proj-grid">
+        <article class="proj c rv"><span class="tag">Computer Vision</span><h3>Computer Vision Toolkit</h3>
           <p>OpenCV pipelines for face, eye, and pedestrian detection with Haar Cascade classifiers and HSV-based color detection, extended with YOLOv8 object detection, segmentation, and pose estimation, plus Mediapipe 3D object and face tracking.</p>
-          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/tree/main/DL" target="_blank" rel="noopener">View code →</a>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">OCR Pipeline</span>
-          <h3>Document &amp; Receipt Scanner</h3>
+          <div class="stack"><span>OpenCV</span><span>YOLOv8</span><span>Mediapipe</span></div>
+          <a class="go" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/tree/main/DL" target="_blank" rel="noopener">View code →</a></article>
+        <article class="proj c rv"><span class="tag">OCR Pipeline</span><h3>Document &amp; Receipt Scanner</h3>
           <p>Detects a document's edges in a tilted photo, corrects perspective, and extracts structured fields (vendor, date, total) using OpenCV and Tesseract.</p>
-          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/blob/main/DL/OCR/files/document_scanner.py" target="_blank" rel="noopener">View code →</a>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">GenAI Safety</span>
-          <h3>LLM Guardrails API</h3>
+          <div class="stack"><span>OpenCV</span><span>Tesseract</span><span>Python</span></div>
+          <a class="go" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/blob/main/DL/OCR/files/document_scanner.py" target="_blank" rel="noopener">View code →</a></article>
+        <article class="proj rv"><span class="tag">GenAI Safety</span><h3>LLM Guardrails API</h3>
           <p>A FastAPI service in front of Gemini that screens prompts and responses through input and output guardrails before they reach the model or the user.</p>
-          <a class="plink" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/tree/main/AI/LLM%20Gaurdrails%20Workshop" target="_blank" rel="noopener">View code →</a>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">MLOps</span>
-          <h3>ML Training CI/CD Pipeline</h3>
+          <div class="stack"><span>FastAPI</span><span>Gemini</span><span>Pydantic</span></div>
+          <a class="go" href="https://github.com/rojaranirepalle/Full-Stack-Data-Science-WIth-Gen-AI-and-Agentic-AI/tree/main/AI/LLM%20Gaurdrails%20Workshop" target="_blank" rel="noopener">View code →</a></article>
+        <article class="proj a rv"><span class="tag">MLOps</span><h3>ML Training CI/CD Pipeline</h3>
           <p>A GitHub Actions workflow that retrains Random Forest and Logistic Regression models on every push and posts the confusion matrix and feature-importance report as a CML comment.</p>
-          <a class="plink" href="https://github.com/rojaranirepalle/CICD-Deployment" target="_blank" rel="noopener">View code →</a>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">Notes</span>
-          <h3>FSDS · GenAI &amp; Agentic AI Notes</h3>
+          <div class="stack"><span>GitHub Actions</span><span>CML</span><span>scikit-learn</span></div>
+          <a class="go" href="https://github.com/rojaranirepalle/CICD-Deployment" target="_blank" rel="noopener">View code →</a></article>
+        <article class="proj rv"><span class="tag">Notes</span><h3>FSDS · GenAI &amp; Agentic AI Notes</h3>
           <p>Structured, ongoing learning notes covering Python, data science, machine learning, generative AI, and agentic AI.</p>
-          <a class="plink" href="https://rojaranirepalle.github.io/fsds-genai-agenticai-notes/" target="_blank" rel="noopener">Explore notes →</a>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">Proof of Concept</span>
-          <h3>AIML-POC</h3>
+          <div class="stack"><span>MkDocs</span><span>Material</span></div>
+          <a class="go" href="https://rojaranirepalle.github.io/fsds-genai-agenticai-notes/" target="_blank" rel="noopener">Explore notes →</a></article>
+        <article class="proj c rv"><span class="tag">Proof of Concept</span><h3>AIML-POC</h3>
           <p>A working space for small AI/ML proof-of-concept notebooks — testing ideas quickly rather than shipping a finished tool.</p>
-          <a class="plink" href="https://github.com/rojaranirepalle/AIML-POC" target="_blank" rel="noopener">View code →</a>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">Monitoring &amp; Alerting</span>
-          <h3>Magento Log Anomaly Monitor</h3>
+          <div class="stack"><span>Jupyter</span><span>Pandas</span><span>scikit-learn</span></div>
+          <a class="go" href="https://github.com/rojaranirepalle/AIML-POC" target="_blank" rel="noopener">View code →</a></article>
+        <article class="proj a rv"><span class="tag">Monitoring &amp; Alerting</span><h3>Magento Log Anomaly Monitor</h3>
           <p>Parses Magento-style access logs, flags anomalies (error spikes, slow responses) using rolling z-score detection, and sends an email alert with a plain-language incident summary.</p>
-          <span class="status-badge">DEMO BUILT · REPO PENDING</span>
-        </div>
-
-        <div class="project-card">
-          <span class="ptag">Platform Engineering</span>
-          <h3>Enterprise Log Analysis Platform</h3>
+          <div class="stack"><span>Python</span><span>z-score</span><span>Email alerts</span></div>
+          <span class="state">Demo built · repo pending</span></article>
+        <article class="proj rv"><span class="tag">Platform Engineering</span><h3>Enterprise Log Analysis Platform</h3>
           <p>A modular Python service — parsers, models, and a Pandas analytics layer — for ingesting and categorizing operational logs. Phase 1 (parsing engine, error categorization) is built; REST APIs and ML-based anomaly detection are next.</p>
-          <span class="status-badge">PHASE 1 BUILT · REPO PRIVATE</span>
-        </div>
-
+          <div class="stack"><span>Python</span><span>Pandas</span><span>Pydantic</span><span>Pytest</span></div>
+          <span class="state">Phase 1 built · repo private</span></article>
       </div>
     </div>
   </section>
 
-  <section id="certifications" class="alt" aria-labelledby="certifications-heading">
+  <section id="certifications" aria-labelledby="certifications-heading">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Certifications</div>
-        <h2 id="certifications-heading">Coursework completed in 2026</h2>
-        <p>Verified where a public link is available.</p>
-      </div>
-      <div class="cert-list">
-
-        <div class="cert-item">
-          <div class="cert-date">AUG 3, 2026</div>
-          <div class="cert-main">
-            <h3>Generative AI, Machine Learning &amp; Intelligent Automation</h3>
-            <div class="issuer">Technology Innovation Hub, IIT Delhi (IHFC)</div>
-          </div>
-          <div></div>
-        </div>
-
-        <div class="cert-item">
-          <div class="cert-date">JUN 18, 2026</div>
-          <div class="cert-main">
-            <h3>Machine Learning Specialization</h3>
-            <div class="issuer">DeepLearning.AI &amp; Stanford Online — 3 courses</div>
-            <div class="subcourses">
-              <div>Supervised ML: Regression &amp; Classification — Jun 11, 2026</div>
-              <div>Advanced Learning Algorithms — Jun 16, 2026</div>
-              <div>Unsupervised Learning, Recommenders, RL — Jun 18, 2026</div>
-            </div>
-          </div>
-          <a class="cert-verify" href="https://coursera.org/verify/specialization/MFPY62AISBLY" target="_blank" rel="noopener">Verify →</a>
-        </div>
-
-        <div class="cert-item">
-          <div class="cert-date">APR 19, 2026</div>
-          <div class="cert-main">
-            <h3>Python 3 Programming Specialization</h3>
-            <div class="issuer">University of Michigan — 5 courses</div>
-          </div>
-          <a class="cert-verify" href="https://coursera.org/verify/specialization/Q2KAPWRR9GXP" target="_blank" rel="noopener">Verify →</a>
-        </div>
-
-        <div class="cert-item">
-          <div class="cert-date">APR 2, 2026</div>
-          <div class="cert-main">
-            <h3>Python for Data Science, AI &amp; Development</h3>
-            <div class="issuer">IBM</div>
-          </div>
-          <a class="cert-verify" href="https://coursera.org/verify/1GRLPPBGSS47" target="_blank" rel="noopener">Verify →</a>
-        </div>
-
+      <span class="eyebrow">05 / certifications</span>
+      <h2 class="sec-title" id="certifications-heading">Coursework completed in 2026</h2>
+      <p class="sec-sub">Verified where a public link is available.</p>
+      <div class="cert-grid">
+        <div class="cert rv"><span class="dt">AUG 3, 2026</span><h3>Generative AI, Machine Learning &amp; Intelligent Automation</h3><div class="iss">Technology Innovation Hub, IIT Delhi (IHFC)</div></div>
+        <div class="cert rv"><span class="dt">JUN 18, 2026</span><h3>Machine Learning Specialization</h3><div class="iss">DeepLearning.AI &amp; Stanford Online — 3 courses</div>
+          <div class="sub"><div>Supervised ML: Regression &amp; Classification — Jun 11, 2026</div><div>Advanced Learning Algorithms — Jun 16, 2026</div><div>Unsupervised Learning, Recommenders, RL — Jun 18, 2026</div></div>
+          <a class="go" href="https://coursera.org/verify/specialization/MFPY62AISBLY" target="_blank" rel="noopener">Verify →</a></div>
+        <div class="cert rv"><span class="dt">APR 19, 2026</span><h3>Python 3 Programming Specialization</h3><div class="iss">University of Michigan — 5 courses</div>
+          <a class="go" href="https://coursera.org/verify/specialization/Q2KAPWRR9GXP" target="_blank" rel="noopener">Verify →</a></div>
+        <div class="cert rv"><span class="dt">APR 2, 2026</span><h3>Python for Data Science, AI &amp; Development</h3><div class="iss">IBM</div>
+          <a class="go" href="https://coursera.org/verify/1GRLPPBGSS47" target="_blank" rel="noopener">Verify →</a></div>
       </div>
     </div>
   </section>
 
   <section id="journey" aria-labelledby="journey-heading">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Journey</div>
-        <h2 id="journey-heading">How I got here</h2>
-      </div>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-date">2013 – 2025</div>
-          <h3>Twelve years in technology &amp; e-commerce</h3>
-          <p>Contributed to technology-driven business solutions, digital transformation initiatives, and customer-focused e-commerce platforms.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">2026</div>
-          <h3>Began the shift into AI &amp; ML</h3>
-          <p>Started a focused transition into Artificial Intelligence, Machine Learning, Generative AI, and Agentic AI.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">April 2026</div>
-          <h3>Python foundations</h3>
-          <p>Completed IBM's Python for Data Science, AI &amp; Development, and the University of Michigan's 5-course Python 3 Programming Specialization.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">June 2026</div>
-          <h3>Machine Learning Specialization</h3>
-          <p>Completed all three courses of DeepLearning.AI &amp; Stanford Online's Machine Learning Specialization — supervised, unsupervised, and advanced algorithms.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Jul – Aug 2026</div>
-          <h3>Computer vision &amp; OCR, hands-on</h3>
-          <p>Built OpenCV projects from the ground up: Haar Cascade detection, color detection, and a document/receipt scanner combining perspective correction with Tesseract OCR.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Aug 3, 2026</div>
-          <h3>IIT Delhi certification</h3>
-          <p>Completed the Professional Certificate Program in Generative AI, Machine Learning, and Intelligent Automation through IHFC, Technology Innovation Hub of IIT Delhi.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Aug 12, 2026</div>
-          <h3>Shipped a CI/CD model pipeline</h3>
-          <p>Built a GitHub Actions workflow that retrains a model on every push and reports results automatically via CML.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Aug 20 – Sep 6, 2026</div>
-          <h3>Deep learning &amp; object detection</h3>
-          <p>Built ANN and CNN classifiers and a multiclass image classifier, then extended the computer-vision toolkit with YOLOv8 object detection, segmentation, and pose estimation, plus Mediapipe 3D tracking.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Sep 2026</div>
-          <h3>Building with Generative AI</h3>
-          <p>Integrated Gemini, GPT, and OpenAI APIs, practiced prompt engineering, and shipped a FastAPI service that guards LLM inputs and outputs.</p>
-        </div>
-      </div>
+      <span class="eyebrow">06 / journey</span>
+      <h2 class="sec-title" id="journey-heading">How I got here</h2>
+      <div class="sec-space"></div>
+      <ol class="tl">
+        <li class="rv"><div class="dt">2013 – 2025</div><h3>Twelve years in technology &amp; e-commerce</h3><p>Contributed to technology-driven business solutions, digital transformation initiatives, and customer-focused e-commerce platforms.</p></li>
+        <li class="rv"><div class="dt">2026</div><h3>Began the shift into AI &amp; ML</h3><p>Started a focused transition into Artificial Intelligence, Machine Learning, Generative AI, and Agentic AI.</p></li>
+        <li class="rv"><div class="dt">April 2026</div><h3>Python foundations</h3><p>Completed IBM's Python for Data Science, AI &amp; Development, and the University of Michigan's 5-course Python 3 Programming Specialization.</p></li>
+        <li class="rv"><div class="dt">June 2026</div><h3>Machine Learning Specialization</h3><p>Completed all three courses of DeepLearning.AI &amp; Stanford Online's Machine Learning Specialization — supervised, unsupervised, and advanced algorithms.</p></li>
+        <li class="rv"><div class="dt">Jul – Aug 2026</div><h3>Computer vision &amp; OCR, hands-on</h3><p>Built OpenCV projects from the ground up: Haar Cascade detection, color detection, and a document/receipt scanner combining perspective correction with Tesseract OCR.</p></li>
+        <li class="rv"><div class="dt">Aug 3, 2026</div><h3>IIT Delhi certification</h3><p>Completed the Professional Certificate Program in Generative AI, Machine Learning, and Intelligent Automation through IHFC, Technology Innovation Hub of IIT Delhi.</p></li>
+        <li class="rv"><div class="dt">Aug 12, 2026</div><h3>Shipped a CI/CD model pipeline</h3><p>Built a GitHub Actions workflow that retrains a model on every push and reports results automatically via CML.</p></li>
+        <li class="rv"><div class="dt">Aug 20 – Sep 6, 2026</div><h3>Deep learning &amp; object detection</h3><p>Built ANN and CNN classifiers and a multiclass image classifier, then extended the computer-vision toolkit with YOLOv8 object detection, segmentation, and pose estimation, plus Mediapipe 3D tracking.</p></li>
+        <li class="rv new"><div class="dt">Sep 2026</div><h3>Building with Generative AI</h3><p>Integrated Gemini, GPT, and OpenAI APIs, practiced prompt engineering, and shipped a FastAPI service that guards LLM inputs and outputs.</p></li>
+      </ol>
     </div>
   </section>
 
-  <section id="contact" class="contact-section" aria-labelledby="contact-heading">
-    <div class="wrap">
-      <div class="eyebrow" style="color:var(--gold-light);">Contact</div>
-      <h2 id="contact-heading">Let's talk about AI, e-commerce, or where they meet.</h2>
+  <div class="wrap">
+    <section id="contact" class="contact-box rv" aria-labelledby="contact-heading" style="padding-top:72px;">
+      <span class="eyebrow">07 / contact</span>
+      <h2 id="contact-heading">Let's talk about AI, e&#8209;commerce, or <span class="hl">where they meet.</span></h2>
       <p>Based in Hyderabad, India. Open to conversations and opportunities.</p>
-      <div class="contact-row">
-        <a class="btn btn-gold" href="https://github.com/rojaranirepalle" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-outline" href="https://www.linkedin.com/in/repallerojarani" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="cta">
+        <a class="btn btn-lime" href="https://github.com/rojaranirepalle" target="_blank" rel="noopener">GitHub →</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/repallerojarani" target="_blank" rel="noopener">LinkedIn →</a>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
 </main>
 
-<footer>© 2026 Roja Rani Repalle</footer>
+<footer>
+  <div class="wrap"><span>© 2026 Roja Rani Repalle</span><span>Last commit Sep 21, 2026</span></div>
+</footer>
 
 <script>
   try {
@@ -597,7 +495,18 @@
         });
       });
     }
-  } catch (e) { /* nav toggle is a progressive enhancement; ignore failures */ }
+  } catch (e) {}
+  try {
+    var rv = document.querySelectorAll('.rv');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      rv.forEach(function (el) { io.observe(el); });
+    } else {
+      rv.forEach(function (el) { el.classList.add('in'); });
+    }
+  } catch (e) { document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); }); }
 </script>
 
 </body>
